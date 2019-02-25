@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Coffeeshop</title>
+
+</head>
+
+<body>
+    <div class="container_top">
+        <div class="top">
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <ul class="menu menu__header">
+                    <li class="menu menu__header menu-item menu-item__header"><a class="menu-item_link"
+                            href="#our-coffee">Our coffee</a></li>
+                    <li class="menu menu__header menu-item menu-item__header"><a class="menu-item_link"
+                            href="#our-ethics">Our ethics</a></li>
+                    <li class="menu menu__header menu-item"><a class="menu-item_link" href="#"><img src="img/logo.svg"
+                                class="logo logo__header" alt="logo"></a></li>
+                    <li class="menu menu__header menu-item menu-item__header"><a class="menu-item_link"
+                            href="#our-menu">Our menu</a></li>
+                    <li class="menu menu__header menu-item menu-item__header item_hide"><a class="menu-item_link"
+                            href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="button button__header btn btn-secondary" data-toggle="tooltip"
+                data-placement="top" title="We’re open today from 8 am :)"><a class="link_visit-us" href="#visit-us"><i
+                        class="fas fa-coffee"></i>&nbsp;&nbsp;Visit us</a>
+
+            </button>
+        </div>
+    </header>
+    <section class="section-intro">
+        <div class="container">
+            <h3 class="coffee-cup__intro">COFFEE</h3>
+            <img src="img/coffee-cup.png" alt="a cup of coffee" class="coffee-cup">
+            <h3 class="coffee-cup__intro_caption">Got time for another?</h3>
+        </div>
+    </section>
+    <aside class="scrollspy">
+        <nav id="navbar-example3" class="navbar navbar-light">
+            <a class="nav-link nav-link_head navbar-brand" href="#"> <i class="fas fa-home"></i></a>
+            <a class="nav-link" href="#our-coffee">Our coffee</a>
+            <a class="nav-link" href="#our-ethics">Our ethics</a>
+            <a class="nav-link" href="#our-menu">Our menu</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+        </nav>
+    </aside>
+    <aside class="scrollspy_alternative">
+            <nav class="navbar_alternative" id="navbar-alt_sticky">
+        <a class="navbar-link_alternative_head  nav-link nav-link_head navbar-brand" href="#"> <i class="fas fa-home"></i></a>
+            <a class="nav-link navbar-link_alternative" href="#our-coffee">Our coffee</a>
+            <a class="nav-link navbar-link_alternative" href="#our-ethics">Our ethics</a>
+            <a class="nav-link navbar-link_alternative" href="#our-menu">Our menu</a>
+            <a class="nav-link navbar-link_alternative" href="#gallery">Gallery</a>
+            </nav>
+            <script>
+                    window.onscroll = function() {myFunction()};
+                    
+                    var navbar = document.getElementById("navbar-alt_sticky");
+                    var sticky = navbar.offsetTop;
+                    
+                    function myFunction() {
+                      if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                      } else {
+                        navbar.classList.remove("sticky");
+                      }
+                    }
+                    </script>
+    </aside>
+
+    <section class="section-body section-body_our-coffee">
+        <div class="container">
+            <h4 class="item-body__heading" id="our-coffee">Our coffee</h4>
+            <p class="item-body__paragraph item-body__paragraph_first">We care about our coffee!</p>
+            <p class="item-body__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                exerci tatio.</p>
+            <img src="img/bean.png" alt="coffee bean" class="img_bean vibrate-1">
+        </div>
+    </section>
+    <section class="section-body section-body_our-ethics">
+        <div class="container">
+            <h4 class="clip-text clip-text_plantation item-body__heading" id="our-ethics">Ethically sourced</h4>
+            <p class="item-body__paragraph item-body__paragraph_first item-body__paragraph_first_full-width">Because it
+                matters!</p>
+            <p class="item-body__paragraph item-body__paragraph_first_full-width">Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat.
+            </p>
+            <p class="item-body__paragraph item-body__paragraph_with-margin item-body__paragraph_first_full-width">Ut
+                wisi enim ad minim veniam, quis nostrud exerci tatio. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Incidunt, provident? </p>
+        </div>
+    </section>
+    <section class="section-body section-body_our-menu">
+        <div class="container">
+            <h4 class="item-body__heading" id="our-menu">Our menu</h4>
+            <div class="our-menu__flex-row">
+                <div class="our-menu  our-menu_first-column">
+                    <span class="menu-item">Tasty club sandwich £3.99</span>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    <span class="menu-item">Special salad with bacon £3.99</span>
+                    Sed diam nonummy nibh euismod tincidunt ut
+                    <span class="menu-item">Pork on toasted bun £3.99</span>
+                    laoreet dolore magna aliquam erat volutpat, ut wisi
+                    <span class="menu-item">Eggs benedict £3.99</span>
+                    enim ad minim veniam, quis nostrud exerci.Lorem ipsum dolor
+                    <span class="menu-item">Eggs americano with bacon £3.99</span>
+                    sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    <span class="menu-item">Fresh fish salad £3.99</span>
+                    euismod tincidunt ut laoreet dolore magna aliquam
+                    <span class="menu-item">Flatbread with humous £3.99</span>
+                    erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio.
+                </div>
+                <div class="our-menu our-menu_second-column">
+                    <span class="menu-item">Tasty club sandwich £3.99</span>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                    <span class="menu-item">Special salad with bacon £3.99</span>
+                    Sed diam nonummy nibh euismod tincidunt ut
+                    <span class="menu-item">Pork on toasted bun £3.99</span>
+                    laoreet dolore magna aliquam erat volutpat, ut wisi
+                    <span class="menu-item">Eggs benedict £3.99</span>
+                    enim ad minim veniam, quis nostrud exerci.Lorem ipsum dolor
+                    <span class="menu-item">Eggs americano with bacon £3.99</span>
+                    sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                    <span class="menu-item">Fresh fish salad £3.99</span>
+                    euismod tincidunt ut laoreet dolore magna aliquam
+                    <span class="menu-item">Flatbread with humous £3.99</span>
+                    erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tatio.
+                </div>
+            </div>
+            <button class="button button__section-menu button_table-order">
+                <i class="fas fa-utensils"></i> Order a table
+            </button>
+        </div>
+
+    </section>
+    <section class="section-body section-body_gallery">
+        <div class="container">
+            <h4 class="item-body__heading" id="gallery">Gallery</h4>
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner__section-gallery carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="img/gallery-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="2000">
+                        <img src="img/gallery-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control carousel-control-prev" href="#carouselExampleInterval" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"><i
+                            class="fas fa-arrow-circle-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control carousel-control-next" href="#carouselExampleInterval" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon carousel-control-icon" aria-hidden="true"><i
+                            class="fas fa-arrow-circle-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+        </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_map">
+                <div class="box__footer_map">
+                    <div class="box__footer_flex">
+                        <h4 class="item-body__footer" id="visit-us">Visit us</h4>
+                        <p
+                            class="item-body__paragraph item-body__paragraph_first item-body__paragraph_first_full-width contacts_special-font">
+                            Don’t be a stranger!</p>
+                        <p class="contacts_special-line-height item-body__paragraph item-body__paragraph_first_full-width">Address line number 1<br>
+                            Address line 2<br>
+                            Town/city<br>
+                            Area<br>
+                            Postcode
+                        </p>
+                        <p
+                            class="item-body__paragraph item-body__paragraph_first item-body__paragraph_first_full-width contacts_special-font">
+                            Contact us</p>
+                        <p class="contacts_special-line-height item-body__paragraph item-body__paragraph_first_full-width">
+                            <a class="social-network_link" href="#"><i class="far fa-comment"></i> &nbsp;&nbsp;Telephone
+                                01482 348264</a><br>
+                            <a class="social-network_link" href="#"><i class="far fa-comment"></i>
+                                &nbsp;&nbsp;facebook.com/coffee</a><br>
+                            <a class="social-network_link" href="#"><i class="far fa-comment"></i>
+                                &nbsp;&nbsp;@coffee</a>
+                        </p>
+                    </div>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.0595848070725!2d-0.1723966487780157!3d53.91291708000403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4878af89ae9d6bd1%3A0x1a757a7bdb4cf3a!2sHall+Garth+Park!5e0!3m2!1sen!2sru!4v1550160740549"
+                        width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a class="menu-item_link" href="#"><img src="img/logo_white.svg" class="logo logo__footer" alt="logo"></a>
+            <p class="para__footer">
+                <span class="bold">Visit uiRepublic!</span><br>
+                The home of the greatest coffee
+            </p>
+            <div class="footer__right">
+                <a class="social-network_link social-network_icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-network_link social-network_icon" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-network_link social-network_icon" href="#"><i class="fab fa-pinterest"></i></a>
+                <a class="social-network_link social-network_icon" href="#"><i class="fab fa-google-plus-g"></i></a>     
+            </div>
+            <button type="button" class="button button__footer btn btn-secondary" data-toggle="tooltip"
+                data-placement="top" title="We’re open today from 8 am :)"><a class="link_visit-us" href="#visit-us"><i
+                        class="fas fa-coffee"></i>&nbsp;&nbsp;Visit us</a>
+            </button>
+        </div>
+
+    </footer>
+    </div>
+</body>
+
+</html>
